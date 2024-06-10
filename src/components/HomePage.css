@@ -1,0 +1,211 @@
+/* HomePage.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #e0c3fc 0%, #8ec5fc 100%);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #7b3fe4;
+  }
+  
+  .logo img {
+    margin-right: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #5f6368;
+    font-weight: bold;
+  }
+  
+  .login-button button {
+    background-color: #7b3fe4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .main-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .main-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  .buttons {
+    margin-bottom: 30px;
+  }
+  
+  .buttons .get-started, .buttons .explore {
+    background-color: #7b3fe4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .section1-image {
+    z-index: 1;
+    max-width: 100%;
+  }
+  
+  .circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: 0;
+  }
+  
+  .circle.top-left {
+    top: 0;
+    left: 360px;
+  }
+  
+  .circle.bottom-right {
+    bottom: 100px;
+    right: 360px;
+  }
+  
+  /* Tools Section */
+  .tools-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .tools-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .tools-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  .tools-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .tool-card {
+    background: white;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tool-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .tool-content h3 {
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .tool-content p {
+    color: #666;
+    font-size: 1em;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul li {
+      margin-bottom: 10px;
+    }
+  
+    .buttons .get-started, .buttons .explore {
+      margin-bottom: 10px;
+    }
+  
+    .image-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .circle.top-left, .circle.bottom-right {
+      display: none; /* Hide circles on small screens */
+    }
+  
+    .tools-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

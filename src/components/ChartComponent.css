@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-section, .chart-section {
+    width: 100%;
+    margin: 10px 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+.chart-section {
+    background: linear-gradient(90deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .text-section, .chart-section {
+        width: 48%;
+        margin: 10px;
+    }
+}
+
+.chart {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 10px solid transparent;
+    background-image: linear-gradient(to right, #ff0000, #0000ff);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+h2 {
+    margin-top: 80px;
+}
+
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.nav-list::before {
+    content: "✓";
+    color: green;
+    margin-right: 10px;
+}

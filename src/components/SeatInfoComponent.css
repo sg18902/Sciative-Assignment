@@ -1,0 +1,148 @@
+.seat-info-container {
+    padding: 20px;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 2em;
+    margin-bottom: 50px;
+    color: #333;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left-side, .seat-info {
+    width: 100%;
+    margin: 10px 0;
+    text-align: left;
+    position: relative;
+  }
+  
+  .instructions {
+    max-width: 100%;
+    background: #fff;
+    padding: 20px;
+    padding-left: 100px;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  
+  .instructions h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .instructions p {
+    margin-bottom: 10px;
+  }
+  
+  .instructions ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .instructions li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .instructions .checkmark {
+    color: #6b4eff;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .ccontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+  }
+  
+  .image {
+    max-width: 50%;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    border-radius: 20px;
+  }
+  
+  .seat-info table {
+    width: 60%;
+    border-collapse: collapse;
+    z-index: 2; /* Ensure the table is above the circle */
+    background-color: white; /* Solid white background for the table */
+    position: relative;
+    margin-left: 60px;
+  }
+  
+  .seat-info th, .seat-info td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #5483ae;
+    font-size: 16px;
+  }
+  
+  .seat-info th {
+    background-color: #a7b1e8;
+    font-size: 16px;
+  }
+  
+  .seat-info tbody tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  
+  .seat-info tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .how-it-works h2, .how-it-works h3, .seat-info th {
+    color: #4a4a4a;
+  }
+  
+  .instructions p, .instructions ul li, .seat-info td {
+    color: #7a7a7a;
+  }
+  
+  .cir {
+    position: absolute;
+    width: 322px;
+    height: 322px;
+    z-index: 0;
+  }
+  
+  /* Adjusted circle position to ensure it doesn't overlap the table */
+  .cir {
+    bottom: 40px;
+    left: 96%; /* Center the circle */
+    transform: translateX(-50%);
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+  
+    .left-side, .seat-info {
+      width: 48%;
+    }
+  
+    .instructions {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
