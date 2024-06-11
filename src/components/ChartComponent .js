@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
-import './ChartComponent.css'; // Import the CSS file
+import './ChartComponent.css'; 
 
 const ChartComponent = () => {
   const [chartOptions, setChartOptions] = useState(null);
@@ -28,11 +28,7 @@ const ChartComponent = () => {
             type: 'column'
           },
           title: {
-            text: 'Corn vs wheat estimated production for 2020',
-            align: 'left'
-          },
-          subtitle: {
-            text: 'Source: <a target="_blank" href="https://www.indexmundi.com/agriculture/?commodity=corn">indexmundi</a>',
+            text: '',
             align: 'left'
           },
           xAxis: {
@@ -45,7 +41,7 @@ const ChartComponent = () => {
           yAxis: {
             min: 0,
             title: {
-              text: 'Values'
+              text: 'Bookings'
             }
           },
           tooltip: {
